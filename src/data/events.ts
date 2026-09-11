@@ -396,13 +396,17 @@ export const CATEGORY_LABEL: Record<Category, string> = {
 
 export const toMinutes = (t?: string) => {
   if (!t) return null;
-  const [h, m] = t.split(":").map(Number);
+  const parts = t.split(":");
+  const h = Number(parts[0] ?? 0);
+  const m = Number(parts[1] ?? 0);
   return h * 60 + m;
 };
 
 export const fmtTime = (t?: string) => {
   if (!t) return "All day";
-  const [h, m] = t.split(":").map(Number);
+  const parts = t.split(":");
+  const h = Number(parts[0] ?? 0);
+  const m = Number(parts[1] ?? 0);
   const suffix = h >= 12 ? "PM" : "AM";
   const hh = h % 12 === 0 ? 12 : h % 12;
   return `${hh}:${String(m).padStart(2, "0")} ${suffix}`;
