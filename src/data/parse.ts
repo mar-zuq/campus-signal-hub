@@ -21,7 +21,8 @@ export function parseAnnouncement(text: string, channel: string): CampusEvent {
   const weekdays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
   const toMatch = lower.match(/to\s+(sun|mon|tues|tue|wednes|wed|thurs|thu|fri|satur|sat)\w*/);
   if (toMatch) {
-    const idx = weekdays.findIndex((w) => w.startsWith(toMatch[1].slice(0, 3)));
+    const key = (toMatch[1] ?? "").slice(0, 3);
+    const idx = weekdays.findIndex((w) => w.startsWith(key));
     if (idx >= 0) {
       const d = new Date(base);
       const delta = (idx - d.getDay() + 7) % 7 || 7;
