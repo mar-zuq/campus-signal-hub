@@ -34,11 +34,12 @@ export function EventCard({ event, conflicts, onOpenRisk, onDutyLeave }: Props) 
         <span className="rounded-full border border-border bg-secondary px-2.5 py-0.5 text-[11px] text-muted-foreground">
           {event.track}
         </span>
-        {event.official ? (
+        {event.official && (
           <span className="rounded-full border border-opportunity/40 bg-opportunity/10 px-2.5 py-0.5 text-[11px] text-opportunity">
             Official poster
           </span>
-        ) : (
+        )}
+        {event.track === "Drishti" && (
           <span className="rounded-full border border-border bg-secondary/60 px-2.5 py-0.5 text-[11px] text-muted-foreground">
             External source
           </span>
