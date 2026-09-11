@@ -43,10 +43,12 @@ export function parseAnnouncement(text: string, channel: string): CampusEvent {
     text.match(/\b(?:at|in|venue[:\s])\s+([A-Z][A-Za-z0-9 ]{2,28})/)?.[1]?.trim() ??
     (text.match(/\bCS\d{3}\b/)?.[0] || "To be announced");
 
-  const title = text
-    .replace(/^(guys|hi|hello|notice:?|attention:?)\s*/i, "")
-    .replace(/\s+/g, " ")
-    .split(/[.\-–—]/)[0]
+  const title = (
+    text
+      .replace(/^(guys|hi|hello|notice:?|attention:?)\s*/i, "")
+      .replace(/\s+/g, " ")
+      .split(/[.\-–—]/)[0] ?? text
+  )
     .trim()
     .slice(0, 78);
 
@@ -56,8 +58,7 @@ export function parseAnnouncement(text: string, channel: string): CampusEvent {
     category,
     track: category === "opportunity" ? "Drishti" : "Academic",
     date,
-    start,
-    end: start ? undefined : undefined,
+    ...(start ? { start } : {}),
     venue,
     organizer: "Parsed from your inbox",
     source: channel,
