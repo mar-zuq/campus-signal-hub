@@ -1,7 +1,6 @@
 🚀 CampusSignal
 Your college has the information. We make sure you don't miss what matters.
 
-Developed for the DotSlash'26 Rapid Prototyping Challenge.
 
 CampusSignal is an AI-powered triage and logistics layer designed specifically for engineering students balancing intense academics with extracurricular leadership. It solves the critical problem of information overload—where vital KTU lab deadlines, timetable shifts, and fest announcements are scattered across chaotic WhatsApp groups, Instagram posters, and department PDFs.
 
