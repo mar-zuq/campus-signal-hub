@@ -17,7 +17,7 @@ CampusSignal acts as an intelligent, automated logistics assistant. It parses un
 *   **The Conflict Engine (Coordinator View):** Analyzes campus schedules to visually flag overlapping events. If a DotSlash competition clashes with a major event like Drishti '26, the app flashes an amber warning predicting an attendance drop, allowing organizers to pivot.
 *   **KTU Utility Hub:** 
     *   **Auto-Duty Leave:** Generate a perfectly formatted Duty Leave letter addressed to the CSE HOD in one click, automatically populated with the student's register number, roll number, and event details.
-    *   **Activity Points Tracker:** A visual widget to track progress toward the mandatory 100 KTU activity points requirement.
+    *   **Activity Points Tracker:** A visual widget to track progress toward the mandatory  KTU activity points requirement.
 *   **Smart Triage & Planning:** 
     *   **Catch Me Up:** Instantly summarizes missed messages into prioritized actions.
     *   **2 Hours Free Plan:** Analyzes the schedule to suggest the most urgent deadline to tackle first.
@@ -33,10 +33,11 @@ CampusSignal acts as an intelligent, automated logistics assistant. It parses un
 *   **Frontend Framework:** React 
 *   **Styling:** Tailwind CSS
 *   **Icons & Typography:** Lucide React, Inter/Geist fonts
-*   **Deployment & Generation:** Lovable.dev
 *   **State Management:** React Hooks (Real-time UI updates without a database dependency for rapid prototyping)
 
-<img width="1920" height="910" alt="page4" src="https://github.com/user-attachments/assets/56224769-9c1b-4c46-b4ea-8613e3b218cf" />
-<img width="1906" height="884" alt="page-2" src="https://github.com/user-attachments/assets/e24ed19e-ac10-4029-a646-785a321ac51f" />
-<img width="1910" height="907" alt="page-1" src="https://github.com/user-attachments/assets/2026d91f-d41f-47b4-bcb9-54b66147467b" />
-<img width="1890" height="903" alt="main-page" src="https://github.com/user-attachments/assets/856168b7-3122-4465-a1e8-22af6c4f7019" />
+<img width="1920" height="904" alt="page-3" src="https://github.com/user-attachments/assets/e6c5cfe7-0294-48ee-9ff6-dbdf5759f3b7" />
+<img width="1920" height="912" alt="page-2" src="https://github.com/user-attachments/assets/273beabf-9a10-455f-8d0d-53fc9c01a12e" />
+<img width="1920" height="905" alt="page-1" src="https://github.com/user-attachments/assets/22fa0325-5ea9-4044-8c06-0c7e5e29f955" />
+<img width="1886" height="909" alt="main-page" src="https://github.com/user-attachments/assets/d1f52d7b-8078-407f-8f8d-669afbf43cb3" />
+<img width="1920" height="906" alt="page-4" src="https://github.com/user-attachments/assets/26a24215-aaa0-492d-a461-5485800bd299" />
+
